@@ -15,6 +15,9 @@ import sparetime.teaching.library.VoidAnimal;
 // The "Optimize Imports" option will remove any unused imports.
 import org.w3c.dom.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Lukas on 01-11-2015.
  */
@@ -31,7 +34,17 @@ public class Exercise1 {
         //  an error), press "Alt+Enter" to get a set of options for that error.
         setDogAnimal(new VoidAnimal());
         setHorseAnimal(new VoidAnimal());
-        doStuffToAnimals();
+
+        List<String> strings = new ArrayList<String>();
+        strings.add("Fisk");
+        strings.add("Gris");
+        strings.add("Mus");
+
+        // You can also use Alt+Enter here, to convert this expression to a for-each instead.
+        for (int i = 0; i < strings.size(); i++) {
+            String string = strings.get(i);
+            System.out.println(string);
+        }
     }
 
     public void doStuffToAnimals() {
