@@ -3,6 +3,9 @@ package sparetime.teaching.exercises;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -37,5 +40,16 @@ public class Exercise2Tests {
     @Test
     public void shouldHaveTestVal2To6_WhenFalse() {
         assertThat(_exercise2_false.getTestVal2(), is(6));
+    }
+
+    @Test
+    public void shouldHaveTheCorrectList() {
+        List<Integer> testList = new ArrayList<Integer>();
+        testList.add(3);
+        testList.add(1);
+        testList.add(3);
+        testList.add(2);
+        testList.add(4);
+        assertThat(_exercise2_true.getTestList(), is(testList));
     }
 }

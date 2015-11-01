@@ -20,6 +20,8 @@ package sparetime.teaching.exercises;
 //  will generate an integer-based for-loop.
 ///////////////////////////////////////////////////
 
+import java.util.List;
+
 /**
  * Created by Lukas on 01-11-2015.
  */
@@ -27,6 +29,7 @@ public class Exercise2 {
     public int _testVal1;
     public int _testVal2;
     public int _testVal3;
+    public List<Integer> _testList;
 
     public Exercise2(boolean val1) {
         if (val1) {
@@ -41,8 +44,8 @@ public class Exercise2 {
         _testVal2 = 4;
         _testVal2 = 6;
 
-        // Use Ctrl+D to duplicate this line five times, making it print 3-1-3-2-4.
-        System.out.println("3");
+        // Use Ctrl+D to duplicate this line five times, so the list ends up being {3,1,3,2,4}.
+        _testList.add(3);
 
         _testVal3 = 0;
         // Use smart templates to create a for loop that calls "_testVal3++" 50 times (so it ends up with the value 50)
@@ -54,5 +57,9 @@ public class Exercise2 {
 
     public int getTestVal2() {
         return _testVal2;
+    }
+
+    public List<Integer> getTestList() {
+        return _testList;
     }
 }
