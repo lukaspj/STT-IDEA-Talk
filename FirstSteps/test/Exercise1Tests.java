@@ -23,7 +23,7 @@ public class Exercise1Tests {
 
     @Test
     public void shouldReturnHorseOnHorseAnimalGetName() {
-        assertThat(_exercise1.getDogAnimal().getAnimalName(), is("Horse"));
+        assertThat(_exercise1.getHorseAnimal().getAnimalName(), is("Horse"));
     }
 
     @Test
@@ -35,6 +35,6 @@ public class Exercise1Tests {
     @Test
     public void shouldReturnHorseStuffOnHorseAnimalGetName() {
         _exercise1.doStuffToAnimals();
-        assertThat(_exercise1.getDogAnimal().getAnimalName(), is("HorseStuff"));
+        assertThat(_exercise1.getHorseAnimal().getAnimalName(), is("HorseStuff"));
     }
 }
