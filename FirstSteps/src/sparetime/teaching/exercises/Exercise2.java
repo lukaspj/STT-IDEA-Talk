@@ -20,6 +20,7 @@ package sparetime.teaching.exercises;
 //  will generate an integer-based for-loop.
 ///////////////////////////////////////////////////
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -44,6 +45,7 @@ public class Exercise2 {
         _testVal2 = 4;
         _testVal2 = 6;
 
+        _testList = new ArrayList<Integer>();
         // Use Ctrl+D to duplicate this line five times, so the list ends up being {3,1,3,2,4}.
         _testList.add(3);
 
