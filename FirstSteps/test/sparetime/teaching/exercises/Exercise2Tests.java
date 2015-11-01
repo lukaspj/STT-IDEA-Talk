@@ -33,13 +33,13 @@ public class Exercise2Tests {
     }
 
     @Test
-    public void shouldHaveTestVal2To4_WhenTrue() {
-        assertThat(_exercise2_false.getTestVal2(), is(4));
+    public void shouldHaveTestVal2To6_WhenTrue() {
+        assertThat(_exercise2_true.getTestVal2(), is(6));
     }
 
     @Test
-    public void shouldHaveTestVal2To6_WhenFalse() {
-        assertThat(_exercise2_false.getTestVal2(), is(6));
+    public void shouldHaveTestVal2To4_WhenFalse() {
+        assertThat(_exercise2_false.getTestVal2(), is(4));
     }
 
     @Test
