@@ -1,6 +1,7 @@
+package sparetime.teaching.exercises;
+
 import org.junit.Before;
 import org.junit.Test;
-import sparetime.teaching.exercises.Exercise1;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
