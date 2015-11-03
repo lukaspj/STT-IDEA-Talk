@@ -17,7 +17,7 @@ Try refactoring the code, such that the figures are filled with color, instead o
 being outlines of figures.
 
 There are corresponding "filled" drawCalls for most of the "stroke" drawCalls. E.g.
-```
+```java
 context.strokeOval(_position.getX(), _position.getY(), _radius, _radius);
 // Has the corresponding
 context.fillOval(_position.getX(), _position.getY(), _radius, _radius);
@@ -26,7 +26,7 @@ context.fillOval(_position.getX(), _position.getY(), _radius, _radius);
 ## Varying colors
 You should try and vary up the colors a bit, instead of just drawing everything in black.
 In FigureDisplay you can see an example of how the colors are specified:
-```
+```java
 drawContext.setLineWidth(5);
 drawContext.setFill(Color.BLACK);
 drawContext.setStroke(Color.BLACK);
