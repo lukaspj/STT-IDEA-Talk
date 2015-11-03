@@ -50,6 +50,8 @@ public class Exercise1 {
     public void doStuffToAnimals() {
         // Implement a new method on the IAnimal interface using the context-aware command "Alt+Enter".
         // The new method should append the string "Stuff" to the AnimalName (e.g. "Dog" becomes "DogStuff").
+        // HINT: Just head into the interface, and add the method. Then press Alt+Enter on it, and see what your options
+        //  are.
     }
 
     public IAnimal getDogAnimal() {
