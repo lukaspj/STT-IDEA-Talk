@@ -36,7 +36,7 @@ public class Exercise2 {
         if (val1) {
         } else {
         }
-        // Move these statements into the if/else statement using the ctrl+shit+up command.
+        // Move these statements into the if/else statement using the ctrl+shift+up command.
         // If val1 = true, then _testVal1 should be 5.
         _testVal1 = 3;
         _testVal1 = 5;
